@@ -1,0 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+
+// Mixins
+@mixin blur($value) {
+    filter: blur($value);
+    -webkit-filter: blur($value);
+}

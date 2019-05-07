@@ -1,0 +1,85 @@
+// Google Fonts
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+// Imports
+@import "partials/colors";
+@import "partials/base";
+
+body {
+    background: $primary-color;
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    color: #eee;
+}
+
+// Showcase
+.showcase {
+    height: 100vh;
+    width: 100%;
+    @include blur(5px);
+    background: {
+        image: url("../images/background.jpg");
+        repeat: no-repeat;
+        size: cover;
+        position: center;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba($primary-color,$background-opacity);
+    }
+}
+
+header {
+    position: absolute;
+    z-index: 1;
+    top: 20vh;
+    left: 15%;
+
+    .icons {
+        margin-top: 1rem;
+    
+        a {
+            padding: 0.4rem;
+    
+            &:hover {
+                color: $secondary-color;
+                transition: all 1000ms ease-out;
+            }
+        }
+    }
+}
+
+// Headings
+h1, h2, h3 {
+    margin: 0;
+    font: {
+        weight: 500;
+        family: 'Open Sans', sans-serif;
+    }
+
+    &.lg-heading {
+        font-size: 6rem;
+    }
+
+    &.sm-heading {
+        margin-bottom: 2rem;
+        padding: 0.2rem 1rem;
+        background: rgba(lighten($primary-color, 2), 0.5);
+    }
+}
+
+a {
+    color: #eee;
+    text-decoration: none;
+}
+
+.secondary-text {
+    color: $secondary-color;
+}
