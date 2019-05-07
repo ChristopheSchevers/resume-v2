@@ -6,6 +6,7 @@
 body {
   background: #333;
   height: 100%;
+  width: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
@@ -13,6 +14,7 @@ body {
 }
 
 .showcase {
+  display: block;
   height: 100vh;
   width: 100%;
   filter: blur(5px);
@@ -55,7 +57,7 @@ h1, h2, h3 {
   font-family: "Open Sans", sans-serif;
 }
 h1.lg-heading, h2.lg-heading, h3.lg-heading {
-  font-size: 6rem;
+  font-size: 5rem;
 }
 h1.sm-heading, h2.sm-heading, h3.sm-heading {
   margin-bottom: 2rem;
@@ -70,6 +72,10 @@ a {
 
 .secondary-text {
   color: #64ff00;
+}
+
+ul {
+  list-style-type: none;
 }
 
 /*# sourceMappingURL=style.css.map */

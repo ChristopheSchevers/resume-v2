@@ -8,6 +8,7 @@
 body {
     background: $primary-color;
     height: 100%;
+    width: 100%;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5;
@@ -16,6 +17,7 @@ body {
 
 // Showcase
 .showcase {
+    display: block;
     height: 100vh;
     width: 100%;
     @include blur(5px);
@@ -65,7 +67,7 @@ h1, h2, h3 {
     }
 
     &.lg-heading {
-        font-size: 6rem;
+        font-size: 5rem;
     }
 
     &.sm-heading {
@@ -82,4 +84,8 @@ a {
 
 .secondary-text {
     color: $secondary-color;
+}
+
+ul {
+    list-style-type: none;
 }
