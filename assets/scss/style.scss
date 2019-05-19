@@ -38,10 +38,24 @@ body {
     }
 }
 
+.resume-pic {
+    position: absolute;
+    z-index: 1;
+    top: 15vh;
+    left: 42%;
+    border-radius: 50%;
+    width: 14rem;
+    height: auto;
+    margin: {
+        left: auto;
+        right: auto;
+    }
+}
+
 header {
     position: absolute;
     z-index: 1;
-    top: 20vh;
+    top: 50vh;
     left: 15%;
 
     .icons {
@@ -77,6 +91,11 @@ h1, h2, h3 {
     }
 }
 
+h3 {
+    font-size: 2rem;
+    text-align: center;
+}
+
 a {
     color: #eee;
     text-decoration: none;
@@ -86,6 +105,17 @@ a {
     color: $secondary-color;
 }
 
+section {
+    padding: 2rem;
+}
+
 ul {
     list-style-type: none;
+    margin: 0;
+}
+
+// Themes
+.light-theme{
+    background-color: $background-light;
+    color: $primary-color;
 }
