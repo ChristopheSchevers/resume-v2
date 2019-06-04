@@ -85,6 +85,7 @@ h1.sm-heading, h2.sm-heading, h3.sm-heading {
 h3 {
   font-size: 2rem;
   text-align: center;
+  padding: 1rem 0;
 }
 
 a {
@@ -102,7 +103,37 @@ section {
 
 ul {
   list-style-type: none;
+  margin: 2rem 0;
+  padding: 0;
+}
+ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+ul img {
+  padding: 0;
   margin: 0;
+}
+
+.tech-list, .lang-list, .star-rating {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.tech-list p, .lang-list p {
+  font-size: 1.2rem;
+}
+
+.exp-list h4 {
+  margin-bottom: 0;
+}
+
+.school {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .light-theme {

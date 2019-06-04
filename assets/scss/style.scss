@@ -94,6 +94,7 @@ h1, h2, h3 {
 h3 {
     font-size: 2rem;
     text-align: center;
+    padding: 1rem 0;
 }
 
 a {
@@ -111,7 +112,45 @@ section {
 
 ul {
     list-style-type: none;
-    margin: 0;
+    margin: 2rem 0;
+    padding: 0;
+
+    li {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    img {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.tech-list, .lang-list, .star-rating {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tech-list, .lang-list {
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+.exp-list {
+    h4 {
+        margin-bottom: 0;
+    }
+}
+
+.school {
+    margin: {
+        left: auto;
+        right: auto;
+    }
 }
 
 // Themes
