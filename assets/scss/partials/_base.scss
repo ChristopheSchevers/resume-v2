@@ -12,3 +12,63 @@ html {
     filter: blur($value);
     -webkit-filter: blur($value);
 }
+
+// Media Queries
+$tablet-width: 1000px;
+$sm-tablet-width: 762px;
+$mobile-width: 600px;
+
+@mixin tablet {
+    @media (min-width: #{$sm-tablet-width}) and (max-width: #{$tablet-width - 1px}) {
+        h1.lg-heading {
+            font-size: 4rem;
+        }
+
+        .contained {
+            width: 600px;
+        }
+    }
+}
+
+@mixin sm-tablet {
+    @media (min-width: #{$mobile-width}) and (max-width: #{$sm-tablet-width - 1px}) {
+        .resume-pic {
+            width: 8rem;
+        }
+
+        h1.lg-heading {
+            font-size: 3rem;
+        }
+
+        .contained {
+            width: 600px;
+        }
+    }
+}
+
+@mixin mobile {
+    @media (max-width: #{$mobile-width - 1px}) {
+        .resume-pic {
+            width: 8rem;
+        }
+
+        header, .resume-pic {
+            left: 50%;
+            transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
+        }
+
+        header {
+            text-align: center;
+            top: 46vh;
+        }
+        
+        h1.lg-heading {
+            font-size: 3rem;
+        }
+
+        .contained {
+            width: 100%;
+        }
+    }
+}

@@ -7,12 +7,11 @@
 
 body {
     background: $primary-color;
-    // height: 100%;
-    // width: 100%;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5;
     color: #eee;
+    overflow-x: hidden;
 }
 
 // Showcase
@@ -70,6 +69,14 @@ header {
                 transition: all 1000ms ease-out;
             }
         }
+    }
+}
+
+.contained {
+    width: 1000px;
+    margin: {
+        left: auto;
+        right: auto;
     }
 }
 
@@ -214,6 +221,7 @@ blockquote {
 
 #courses {
     max-height: 170px;
+    margin-top: 2rem;
     overflow: hidden;
     transition: max-height 0.8s ease-in-out;  
 }
@@ -223,3 +231,8 @@ blockquote {
     background-color: $background-light;
     color: $primary-color;
 }
+
+// Media Queries
+@include tablet;
+@include sm-tablet;
+@include mobile;
