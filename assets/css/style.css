@@ -42,8 +42,10 @@ body {
 .resume-pic {
   position: absolute;
   z-index: 1;
-  top: 15vh;
-  left: 42%;
+  top: 20vh;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
   border-radius: 50%;
   width: 10rem;
   height: auto;
@@ -232,7 +234,7 @@ blockquote {
     width: 8rem;
   }
 
-  header, .resume-pic {
+  header {
     left: 50%;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
