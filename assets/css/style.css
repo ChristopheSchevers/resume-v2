@@ -251,5 +251,54 @@ blockquote {
     width: 100%;
   }
 }
+@media print {
+  *, .secondary-text, .non-fa {
+    color: #000;
+  }
+
+  .showcase {
+    display: none;
+  }
+
+  .resume-pic {
+    top: 0;
+    left: 15%;
+  }
+
+  header {
+    position: static;
+    text-align: right;
+  }
+
+  .coll-content, #courses {
+    max-height: none;
+  }
+
+  .pb-wrapper {
+    -webkit-print-color-adjust: exact;
+  }
+  .pb-wrapper .progress-bar:before {
+    display: block;
+    content: "";
+    border: #000;
+    background-color: none;
+  }
+  .pb-wrapper .progress-bar:before .progress-bar-fill {
+    background-color: #000;
+    transition: none;
+  }
+
+  .print-item {
+    display: block !important;
+  }
+
+  .non-fa {
+    display: none;
+  }
+
+  a:after {
+    content: "( " attr(href) " )";
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
