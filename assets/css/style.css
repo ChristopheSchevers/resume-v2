@@ -256,6 +256,10 @@ blockquote {
     color: #000;
   }
 
+  h1.lg-heading {
+    font-size: 2rem;
+  }
+
   .showcase {
     display: none;
   }
@@ -267,7 +271,15 @@ blockquote {
 
   header {
     position: static;
+    right: 0;
     text-align: right;
+  }
+
+  ul {
+    margin: 1rem 0;
+  }
+  ul li {
+    padding: 0rem 0.25rem 2rem;
   }
 
   .coll-content, #courses {

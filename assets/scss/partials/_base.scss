@@ -76,8 +76,16 @@ $mobile-width: 600px;
 // Print style
 @mixin print{
     @media print {
+        // * {
+        //     font-size: 0.7rem;
+        // }
+
         *, .secondary-text, .non-fa {
             color: #000;
+        }
+
+        h1.lg-heading {
+            font-size: 2rem;
         }
 
         .showcase {
@@ -91,7 +99,16 @@ $mobile-width: 600px;
         
         header {
             position: static;
+            right: 0;
             text-align: right;
+        }
+
+        ul {
+            margin: 1rem 0;
+
+            li {
+                padding: 0rem 0.25rem 2rem;
+            }
         }
 
         .coll-content, #courses {
